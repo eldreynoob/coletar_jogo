@@ -2,12 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2cpi3axh3f0h"
-valid=false
+uid="uid://cs3xwxv7rqu1e"
+path="res://.godot/imported/cuzcuz.jpeg-2e48bf6f5b911fbf5aaf6534eb4b4a98.ctex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
-source_file="res://no-one-will.png"
+source_file="res://cuzcuz.jpeg"
+dest_files=["res://.godot/imported/cuzcuz.jpeg-2e48bf6f5b911fbf5aaf6534eb4b4a98.ctex"]
 
 [params]
 

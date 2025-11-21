@@ -1,0 +1,62 @@
+[gd_scene load_steps=8 format=3 uid="uid://bls2nwi65cm7k"]
+
+[ext_resource type="Script" uid="uid://u6mm1boc7wl4" path="res://character_body_2d.gd" id="1_0e48y"]
+[ext_resource type="Texture2D" uid="uid://becw8ixtlxoyc" path="res://widows.jpg" id="1_0hol4"]
+[ext_resource type="Texture2D" uid="uid://c4j5rb2s73d2y" path="res://121-m.png" id="2_epypp"]
+[ext_resource type="Texture2D" uid="uid://cs3xwxv7rqu1e" path="res://cuzcuz.jpeg" id="3_epypp"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0hol4"]
+size = Vector2(37, 75)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_q6r6c"]
+size = Vector2(1181, 56.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_epypp"]
+size = Vector2(52, 523)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Widows" type="Sprite2D" parent="."]
+position = Vector2(590, 292.00003)
+scale = Vector2(0.60052085, 0.52037036)
+texture = ExtResource("1_0hol4")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+position = Vector2(84, 77)
+script = ExtResource("1_0e48y")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+scale = Vector2(0.33200002, 0.32600006)
+texture = ExtResource("2_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+visible = false
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_0hol4")
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(556, 596)
+disable_mode = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+position = Vector2(7.749958, 21.5)
+scale = Vector2(3.9615383, 0.7083333)
+texture = ExtResource("3_epypp")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(7, -8)
+shape = SubResource("RectangleShape2D_q6r6c")
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2(-311, 235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+position = Vector2(295, 47.5)
+shape = SubResource("RectangleShape2D_epypp")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2(-311, 235)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1490, 63)
+shape = SubResource("RectangleShape2D_epypp")
